@@ -1,0 +1,382 @@
+
+/*************
+	Typo
+**************/
+@font-face {
+    font-family: 'noto_monoregular';
+    src: url('NotoMono-Regular-webfont.eot');
+    src: url('NotoMono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('NotoMono-Regular-webfont.woff2') format('woff2'),
+         url('NotoMono-Regular-webfont.woff') format('woff'),
+         url('NotoMono-Regular-webfont.ttf') format('truetype'),
+         url('NotoMono-Regular-webfont.svg#noto_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'abelregular';
+    src: url('abel-regular-webfont.eot');
+    src: url('abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('abel-regular-webfont.woff2') format('woff2'),
+         url('abel-regular-webfont.woff') format('woff'),
+         url('abel-regular-webfont.ttf') format('truetype'),
+         url('abel-regular-webfont.svg#abelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+/**************
+	General
+***************/
+body{
+	max-width: auto;
+	max-height: auto;
+	background-color: #F7F0F5;
+}
+
+h1{
+	color: #534B52;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'noto_monoregular';
+}
+
+p{
+	font-family: 'abelregular';
+}
+
+label{
+	font-family: "abelregular" 
+}
+
+small{
+	font-family: "abelregular"
+	font-size: 0.8em;
+}
+
+a:link{
+	color: white;
+}
+
+a:visited{
+	color:#DD7230;
+}
+
+/**************
+	Navbar
+***************/
+
+nav{
+	width: 100%;
+	height: 200px;
+}
+
+nav, #navbar{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #AFC97E;
+	/*border-radius: 20px;*/
+}
+
+nav .banner{
+	position: relative;
+	left: 15%;
+}
+
+
+nav button{
+	height: 70px;
+	position : relative;
+	background:  #5E503F;
+	border:solid 1px #5E503F;
+	border-radius: 20px;
+	color: white;
+	top : 50px;
+	right: 25%;
+}
+
+nav a{
+	position: relative;
+	top : 25px;
+	text-decoration: none;
+}
+
+ul, li{
+	position: relative;
+	top: 25%;
+	right: 25%;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+	margin-left: 50px;
+
+}
+
+input{
+	border: 1px solid #5E503F ;
+	position: relative;
+	top: 15%;
+	right: 25%;
+	width: 60%;
+}
+
+
+/**************
+	Couleur
+***************/
+
+
+#colors{
+	justify-content: center;
+}
+
+#Top{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+div .Main_Color{
+	color: white;
+	width: 250px;
+	height: 100px; 
+	background: #5E503F;
+}
+
+.Main_color p{
+	justify-content: center;
+	padding-top: 15%;
+	padding-left: 23%;
+}
+
+div .Second_Color{
+	color: white;
+	width: 250px;
+	height: 100px; 
+	background: #AFC97E;
+}
+
+.Second_color p{
+	justify-content: center;
+	padding-top: 15%;
+	padding-left: 23%;
+}
+
+
+/********************
+	THREE SHADES OF GREY
+*********************/
+
+#shades{
+	justify-content: center;
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+
+div .Dark_Grey{
+	color: white;
+	width: 250px;
+	height: 100px; 
+	background: #303030;
+}
+
+.Dark_Grey p{
+	justify-content: center;
+	padding-top: 15%;
+	padding-left: 23%;
+}
+
+div .Medium_Grey{
+	color: white;
+	width: 250px;
+	height: 100px; 
+	background: #8f8f8f;
+}
+
+.Medium_Grey p{
+	justify-content: center;
+	padding-top: 15%;
+	padding-left: 23%;
+}
+
+div .Light_Grey{
+	color: white;
+	width: 250px;
+	height: 100px; 
+	background: #DCDCDC;
+}
+
+.Light_Grey p{
+	justify-content: center;
+	padding-top: 15%;
+	padding-left: 23%;
+}
+
+/***************
+	BOUTONS
+****************/
+
+#butts{
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+
+button{
+	width: 150px;
+	height: 60px;
+	border-radius: 5% 5% 5% 5%;
+}
+
+.Success_button{
+	color: white;
+	background: #1FD12B;
+	border: solid 1px #1FD12B;
+}
+
+
+.Info_button{
+	color: white;
+	width: 150px;
+	height: 60px;
+	background: #409FA0;
+	border: solid 1px #409FA0;
+	border-radius: 5% 5% 5% 5%;
+}
+
+.Warning_button{
+	color: black;
+	width: 150px;
+	height: 60px;
+	background: #E9CE2C;
+	border: solid 1px #E9CE2C;
+	border-radius: 5% 5% 5% 5%;
+}
+
+.Danger_button{
+	color: white;
+	width: 150px;
+	height: 60px;
+	background: #BF211E;
+	border: solid 1px #BF211E;
+	border-radius: 5% 5% 5% 5%;
+}
+
+.buttons:hover{
+	opacity: 0.8;
+}
+
+ .Outlines_Success_button{
+	color: #1FD12B;
+	width: 150px;
+	height: 60px;
+	background: white;
+	border: solid 1px #1FD12B;
+	border-radius: 5% 5% 5% 5%;	
+}
+
+.Outlines_Info_button{
+	color: #409FA0
+	width: 150px;
+	height: 60px;
+	background: white;
+	border: solid 1px #409FA0;
+	border-radius: 5% 5% 5% 5%;	
+}
+
+.Outlines_Warning_button{
+	color: #E9CE2C
+	width: 150px;
+	height: 60px;
+	background: white;
+	border: solid 1px #E9CE2C;
+	border-radius: 5% 5% 5% 5%;	
+}
+
+.Outlines_Danger_button{
+	color: #BF211E;
+	width: 150px;
+	height: 60px;
+	background: white;
+	border: solid 1px #BF211E;
+	border-radius: 5% 5% 5% 5%;	
+}
+
+.Large_Success_button{
+	color: white;
+	width: 250px;
+	height: 60px;
+	background: #1FD12B;
+	border: solid 1px #1FD12B;
+	border-radius: 30px;
+}
+
+div .Small_Danger_button{
+	color: white;
+	width: 100px;
+	height: 60px;
+	background: #BF211E;
+	border: solid 1px #BF211E;
+	border-radius: 30px;
+}
+
+/**********************************
+			Formulaire
+***********************************/
+
+form{
+	justify-content: center;
+	background: #5E503F;
+	color: white;
+}
+
+input{
+	width: 150px;
+	height: 25px;
+	border-radius: 25px;  
+}
+
+
+/*********************************
+			Liste
+**********************************/
+
+.list-item-group{
+	border: solid 2px #AFC97E ;
+	background: #AFC97E;
+	width: 200px;
+	border-radius: 15px; 
+	color: white;
+	font-style: 'abelregular';
+}
+
+/*********************************
+			Footer
+**********************************/
+
+footer{
+	font-family: "abelregular";
+	font-size: 1.2em;
+	position: relative;
+	background: #AFC97E;
+	color: #5E503F;
+}
+
+footer i{
+	color: #5E503F;
+	margin-left: 20%; 
+	justify-content: space-between;
+}
